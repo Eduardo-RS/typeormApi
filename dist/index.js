@@ -19,10 +19,11 @@ const main = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
         yield db_1.myDatabase.initialize();
         console.log('Connection with ormdb success');
-        app_1.default.listen(300);
+        app_1.default.listen(3000);
         console.log('Hello express JS');
     }
     catch (err) {
         console.error("Error during Data Source initialization", err);
     }
 });
+main();
